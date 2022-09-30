@@ -847,3 +847,58 @@ img {
 .panel-danger > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #ebccd1;
 }
+
+
+.gallery {
+    position: absolute;
+    margin: auto;
+    width: 600px;
+    height: 450px;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.gallery ul { list-style-type: none; }
+.gallery li { margin-top: 20px; }
+
+.gallery-list img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.gallery-list li { display: none; }
+
+.gallery-control {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+}
+
+.gallery-control a { position: absolute; }
+
+.gallery-control .name,
+.gallery-control .number {
+    margin: 3px 0;
+    right: 0;
+}
+
+.gallery-control .name { left: 0; }
+
+.gallery-control .prev,
+.gallery-control .next {
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.gallery-control .prev {
+    background-image: url(img/icons/circled-chevron-left.png);
+    left: 0;
+}
+
+.gallery-control .next {
+    background-image: url(img/icons/circled-chevron-right.png);
+    left: 20px;
+}
