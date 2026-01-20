@@ -38,4 +38,7 @@ let bounds = [
 ];
 
 map.setMaxBounds(bounds);
+
+const fullscreenControl = new maplibregl.FullscreenControl();
+map.addControl(fullscreenControl, 'top-left');
 //////////////////////////////////////////////////////////////////////////////////////////////////
