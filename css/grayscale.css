@@ -91,7 +91,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/paris_gif.gif");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/eye_tracking_anchors.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -901,4 +901,19 @@ img {
 .gallery-control .next {
     background-image: url(img/icons/circled-chevron-right.png);
     left: 20px;
+}
+
+.image-container {
+    display: flex;           /* Active le mode Flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;     /* Centre verticalement */
+    min-height: 100vh;      /* Optionnel : prend toute la hauteur de l'écran */
+    padding: 20px;           /* Évite que l'image touche les bords du navigateur */
+}
+
+.centered-image {
+    max-width: 100%;        /* L'image ne dépassera jamais la largeur de l'écran */
+    height: auto;           /* Garde les proportions de l'image */
+    border-radius: 8px;     /* Optionnel : pour des coins légèrement arrondis */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Optionnel : pour donner du relief */
 }
