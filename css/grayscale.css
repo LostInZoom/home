@@ -917,3 +917,19 @@ img {
     border-radius: 8px;     /* Optionnel : pour des coins légèrement arrondis */
     box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Optionnel : pour donner du relief */
 }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;           /* Prend toute la largeur disponible... */
+    max-width: 800px;      /* ...mais ne dépasse pas 800px pour rester élégant */
+    aspect-ratio: 16 / 9;  /* MAGIQUE : maintient le format cinéma automatiquement */
+    border-radius: 12px;   /* Optionnel : pour des bords arrondis modernes */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
