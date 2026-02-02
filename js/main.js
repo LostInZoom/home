@@ -20,3 +20,25 @@ jQuery(function($) {
   });
 
 });
+
+
+///////////////////////////////////Carte gestion de crise Paul////////////////////////////////////
+const map = new maplibregl.Map({
+    container: 'seism_map',
+    style: "https://lostinzoom.huma-num.fr/vtiles/style/hard_style.json",
+    center: [0.0, 43],
+    zoom: 6,
+    attributionControl: false
+    }); 
+map.setMinZoom(6);
+map.setMaxZoom(14.99);
+let bounds = [
+  [-11.0, 40.0], 
+  [11.0, 48.0] 
+];
+
+map.setMaxBounds(bounds);
+
+const fullscreenControl = new maplibregl.FullscreenControl();
+map.addControl(fullscreenControl, 'top-left');
+//////////////////////////////////////////////////////////////////////////////////////////////////
